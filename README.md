@@ -1,3 +1,6 @@
+# description:
+  this is blog website in this website any user can read the any blogs or comment on any blog and if any user want to write a blogs or post a blogs for that user need to log in to website then loged in user can write, edit and delete the blogs, and admin can delete or edit any blogs.
+
 # for frontend
 
 1. copy https url
