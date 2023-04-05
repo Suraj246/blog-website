@@ -1,8 +1,8 @@
 # for frontend
 
 1. copy https url
-2. git clone paste url here
-3. go to terminal and type "cd frontend" after this make sure you are in frontend folder
+2. go to terminal and type git clone paste url here
+3. type "cd frontend" after this make sure you are in frontend folder
 4. type npm install (it will install all dependencies)
 5. type npm start (frontend app is ready)
 
