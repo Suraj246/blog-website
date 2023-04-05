@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$headerColor: #ffffffff;
+$a: none;
+// create blog page
+$create_blog_btn: rgb(71, 212, 223);
+$text_btn: #ffffffff;
+
+@mixin grid {
+    display: grid;
+    gap: 1rem;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,138 @@
+@import "../../App.scss";
+
+.sing_up_page {
+    display: flex;
+    min-height: 70vh;
+
+    .a {
+        text-decoration: none;
+    }
+
+    .signup-right {
+        display: flex;
+        width: 100vw;
+        // justify-content: center;
+
+        .signup-form-container {
+            margin-top: 10rem;
+            padding-left: 7rem;
+
+            .signup-msg-right {
+                display: flex;
+                flex-direction: column;
+                margin: 2rem 0;
+                gap: 10px;
+
+                .signup-title-right {
+                    font-size: 2.3rem;
+                    font-weight: 600;
+                }
+            }
+
+            form {
+                @include grid;
+
+                .input {
+                    line-height: 1.3rem;
+                    padding: 0.5rem;
+                    font-size: 1rem;
+                    width: 20vw;
+                    border: none;
+                    border-bottom: 1px solid rgb(212, 206, 206);
+                    outline: none;
+                    transition: all .5s;
+
+                    &:hover {
+                        border-bottom: 1px solid rgba(99, 96, 171, 1);
+                        transition: all 0.1s;
+                    }
+
+
+                }
+
+                .signup {
+                    width: 18rem;
+                    height: 5vh;
+                    background-color: rgba(68, 66, 120, 1);
+                    color: #fff;
+                    border: none;
+                    font-size: 1rem;
+                    margin-bottom: .7rem;
+                    cursor: pointer;
+                }
+
+                .signup-btn-container {
+                    display: flex;
+                    gap: 1rem;
+                }
+
+            }
+        }
+    }
+}
+
+.header {
+    padding: 2rem 4vw;
+    @include flex;
+    background-color: $headerColor;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    .logout-container {
+        @include flex;
+        gap: 1rem;
+        position: relative;
+
+        .user-title {
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            text-decoration: $a;
+            cursor: pointer;
+        }
+
+        .dropdown-container {
+            @include grid;
+            padding: 1rem;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: $headerColor;
+            width: 7vw;
+            font-size: 1rem;
+
+            .a {
+                color: #000000;
+                cursor: pointer;
+                text-decoration: $a;
+            }
+
+            .logout {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .title {
+        font-size: 2vw;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .login-title {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        text-decoration: $a;
+    }
+
+    .search-container {
+        width: 40vw;
+
+        #search {
+            width: 100%;
+            line-height: 2rem;
+            outline: none;
+            padding: 0 1rem;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+    }
+}
